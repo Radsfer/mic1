@@ -1,0 +1,404 @@
+Simulator report for MC1
+Fri Jul 12 00:13:58 2024
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 121 nodes    ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 0            ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C5F256C6  ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                         ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                       ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------+---------------+
+; Simulation mode                                                                            ; Timing                                        ; Timing        ;
+; Start time                                                                                 ; 0 ns                                          ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                           ;               ;
+; Vector input source                                                                        ; /home/radsfer/shared/Projeto MC1/SHIFTTER.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                            ; On            ;
+; Check outputs                                                                              ; Off                                           ; Off           ;
+; Report simulation coverage                                                                 ; On                                            ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                            ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                            ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                            ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                           ; Off           ;
+; Detect glitches                                                                            ; Off                                           ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                           ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                           ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                           ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                           ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                            ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                    ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                           ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                           ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                          ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 32-bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 121          ;
+; Total output ports checked                          ; 121          ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 121          ;
+; Total output ports with no 1-value coverage         ; 121          ;
+; Total output ports with no 0-value coverage         ; 121          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------+
+; Missing 1-Value Coverage                                             ;
++-------------------------+-------------------------+------------------+
+; Node Name               ; Output Port Name        ; Output Port Type ;
++-------------------------+-------------------------+------------------+
+; |SHIFTTER|inst24[31]    ; |SHIFTTER|inst24[31]    ; combout          ;
+; |SHIFTTER|inst24[30]    ; |SHIFTTER|inst24[30]    ; combout          ;
+; |SHIFTTER|inst24[29]    ; |SHIFTTER|inst24[29]    ; combout          ;
+; |SHIFTTER|inst24[28]    ; |SHIFTTER|inst24[28]    ; combout          ;
+; |SHIFTTER|inst24[27]    ; |SHIFTTER|inst24[27]    ; combout          ;
+; |SHIFTTER|inst24[26]    ; |SHIFTTER|inst24[26]    ; combout          ;
+; |SHIFTTER|inst24[25]    ; |SHIFTTER|inst24[25]    ; combout          ;
+; |SHIFTTER|inst24[24]    ; |SHIFTTER|inst24[24]    ; combout          ;
+; |SHIFTTER|inst24[23]~0  ; |SHIFTTER|inst24[23]~0  ; combout          ;
+; |SHIFTTER|inst24[23]~1  ; |SHIFTTER|inst24[23]~1  ; combout          ;
+; |SHIFTTER|inst24[22]~2  ; |SHIFTTER|inst24[22]~2  ; combout          ;
+; |SHIFTTER|inst24[22]~3  ; |SHIFTTER|inst24[22]~3  ; combout          ;
+; |SHIFTTER|inst24[21]~4  ; |SHIFTTER|inst24[21]~4  ; combout          ;
+; |SHIFTTER|inst24[21]~5  ; |SHIFTTER|inst24[21]~5  ; combout          ;
+; |SHIFTTER|inst24[20]~6  ; |SHIFTTER|inst24[20]~6  ; combout          ;
+; |SHIFTTER|inst24[20]~7  ; |SHIFTTER|inst24[20]~7  ; combout          ;
+; |SHIFTTER|inst24[19]~8  ; |SHIFTTER|inst24[19]~8  ; combout          ;
+; |SHIFTTER|inst24[19]~9  ; |SHIFTTER|inst24[19]~9  ; combout          ;
+; |SHIFTTER|inst24[18]~10 ; |SHIFTTER|inst24[18]~10 ; combout          ;
+; |SHIFTTER|inst24[18]~11 ; |SHIFTTER|inst24[18]~11 ; combout          ;
+; |SHIFTTER|inst24[17]~12 ; |SHIFTTER|inst24[17]~12 ; combout          ;
+; |SHIFTTER|inst24[17]~13 ; |SHIFTTER|inst24[17]~13 ; combout          ;
+; |SHIFTTER|inst24[16]~14 ; |SHIFTTER|inst24[16]~14 ; combout          ;
+; |SHIFTTER|inst24[16]~15 ; |SHIFTTER|inst24[16]~15 ; combout          ;
+; |SHIFTTER|inst24[15]~16 ; |SHIFTTER|inst24[15]~16 ; combout          ;
+; |SHIFTTER|inst24[15]~17 ; |SHIFTTER|inst24[15]~17 ; combout          ;
+; |SHIFTTER|inst24[14]~18 ; |SHIFTTER|inst24[14]~18 ; combout          ;
+; |SHIFTTER|inst24[14]~19 ; |SHIFTTER|inst24[14]~19 ; combout          ;
+; |SHIFTTER|inst24[13]~20 ; |SHIFTTER|inst24[13]~20 ; combout          ;
+; |SHIFTTER|inst24[13]~21 ; |SHIFTTER|inst24[13]~21 ; combout          ;
+; |SHIFTTER|inst24[12]~22 ; |SHIFTTER|inst24[12]~22 ; combout          ;
+; |SHIFTTER|inst24[12]~23 ; |SHIFTTER|inst24[12]~23 ; combout          ;
+; |SHIFTTER|inst24[11]~24 ; |SHIFTTER|inst24[11]~24 ; combout          ;
+; |SHIFTTER|inst24[11]~25 ; |SHIFTTER|inst24[11]~25 ; combout          ;
+; |SHIFTTER|inst24[10]~26 ; |SHIFTTER|inst24[10]~26 ; combout          ;
+; |SHIFTTER|inst24[10]~27 ; |SHIFTTER|inst24[10]~27 ; combout          ;
+; |SHIFTTER|inst24[9]~28  ; |SHIFTTER|inst24[9]~28  ; combout          ;
+; |SHIFTTER|inst24[9]~29  ; |SHIFTTER|inst24[9]~29  ; combout          ;
+; |SHIFTTER|inst24[8]~30  ; |SHIFTTER|inst24[8]~30  ; combout          ;
+; |SHIFTTER|inst24[8]~31  ; |SHIFTTER|inst24[8]~31  ; combout          ;
+; |SHIFTTER|inst24[7]~32  ; |SHIFTTER|inst24[7]~32  ; combout          ;
+; |SHIFTTER|inst24[7]~33  ; |SHIFTTER|inst24[7]~33  ; combout          ;
+; |SHIFTTER|inst24[6]~34  ; |SHIFTTER|inst24[6]~34  ; combout          ;
+; |SHIFTTER|inst24[6]~35  ; |SHIFTTER|inst24[6]~35  ; combout          ;
+; |SHIFTTER|inst24[5]~36  ; |SHIFTTER|inst24[5]~36  ; combout          ;
+; |SHIFTTER|inst24[5]~37  ; |SHIFTTER|inst24[5]~37  ; combout          ;
+; |SHIFTTER|inst24[4]~38  ; |SHIFTTER|inst24[4]~38  ; combout          ;
+; |SHIFTTER|inst24[4]~39  ; |SHIFTTER|inst24[4]~39  ; combout          ;
+; |SHIFTTER|inst24[3]~40  ; |SHIFTTER|inst24[3]~40  ; combout          ;
+; |SHIFTTER|inst24[3]~41  ; |SHIFTTER|inst24[3]~41  ; combout          ;
+; |SHIFTTER|inst24[2]~42  ; |SHIFTTER|inst24[2]~42  ; combout          ;
+; |SHIFTTER|inst24[2]~43  ; |SHIFTTER|inst24[2]~43  ; combout          ;
+; |SHIFTTER|inst24[1]~44  ; |SHIFTTER|inst24[1]~44  ; combout          ;
+; |SHIFTTER|inst24[1]~45  ; |SHIFTTER|inst24[1]~45  ; combout          ;
+; |SHIFTTER|inst24[0]~46  ; |SHIFTTER|inst24[0]~46  ; combout          ;
+; |SHIFTTER|Cout[31]      ; |SHIFTTER|Cout[31]      ; padio            ;
+; |SHIFTTER|Cout[30]      ; |SHIFTTER|Cout[30]      ; padio            ;
+; |SHIFTTER|Cout[29]      ; |SHIFTTER|Cout[29]      ; padio            ;
+; |SHIFTTER|Cout[28]      ; |SHIFTTER|Cout[28]      ; padio            ;
+; |SHIFTTER|Cout[27]      ; |SHIFTTER|Cout[27]      ; padio            ;
+; |SHIFTTER|Cout[26]      ; |SHIFTTER|Cout[26]      ; padio            ;
+; |SHIFTTER|Cout[25]      ; |SHIFTTER|Cout[25]      ; padio            ;
+; |SHIFTTER|Cout[24]      ; |SHIFTTER|Cout[24]      ; padio            ;
+; |SHIFTTER|Cout[23]      ; |SHIFTTER|Cout[23]      ; padio            ;
+; |SHIFTTER|Cout[22]      ; |SHIFTTER|Cout[22]      ; padio            ;
+; |SHIFTTER|Cout[21]      ; |SHIFTTER|Cout[21]      ; padio            ;
+; |SHIFTTER|Cout[20]      ; |SHIFTTER|Cout[20]      ; padio            ;
+; |SHIFTTER|Cout[19]      ; |SHIFTTER|Cout[19]      ; padio            ;
+; |SHIFTTER|Cout[18]      ; |SHIFTTER|Cout[18]      ; padio            ;
+; |SHIFTTER|Cout[17]      ; |SHIFTTER|Cout[17]      ; padio            ;
+; |SHIFTTER|Cout[16]      ; |SHIFTTER|Cout[16]      ; padio            ;
+; |SHIFTTER|Cout[15]      ; |SHIFTTER|Cout[15]      ; padio            ;
+; |SHIFTTER|Cout[14]      ; |SHIFTTER|Cout[14]      ; padio            ;
+; |SHIFTTER|Cout[13]      ; |SHIFTTER|Cout[13]      ; padio            ;
+; |SHIFTTER|Cout[12]      ; |SHIFTTER|Cout[12]      ; padio            ;
+; |SHIFTTER|Cout[11]      ; |SHIFTTER|Cout[11]      ; padio            ;
+; |SHIFTTER|Cout[10]      ; |SHIFTTER|Cout[10]      ; padio            ;
+; |SHIFTTER|Cout[9]       ; |SHIFTTER|Cout[9]       ; padio            ;
+; |SHIFTTER|Cout[8]       ; |SHIFTTER|Cout[8]       ; padio            ;
+; |SHIFTTER|Cout[7]       ; |SHIFTTER|Cout[7]       ; padio            ;
+; |SHIFTTER|Cout[6]       ; |SHIFTTER|Cout[6]       ; padio            ;
+; |SHIFTTER|Cout[5]       ; |SHIFTTER|Cout[5]       ; padio            ;
+; |SHIFTTER|Cout[4]       ; |SHIFTTER|Cout[4]       ; padio            ;
+; |SHIFTTER|Cout[3]       ; |SHIFTTER|Cout[3]       ; padio            ;
+; |SHIFTTER|Cout[2]       ; |SHIFTTER|Cout[2]       ; padio            ;
+; |SHIFTTER|Cout[1]       ; |SHIFTTER|Cout[1]       ; padio            ;
+; |SHIFTTER|Cout[0]       ; |SHIFTTER|Cout[0]       ; padio            ;
+; |SHIFTTER|S[0]          ; |SHIFTTER|S[0]~corein   ; combout          ;
+; |SHIFTTER|SRA1          ; |SHIFTTER|SRA1~corein   ; combout          ;
+; |SHIFTTER|S[1]          ; |SHIFTTER|S[1]~corein   ; combout          ;
+; |SHIFTTER|SLL8          ; |SHIFTTER|SLL8~corein   ; combout          ;
+; |SHIFTTER|S[2]          ; |SHIFTTER|S[2]~corein   ; combout          ;
+; |SHIFTTER|S[3]          ; |SHIFTTER|S[3]~corein   ; combout          ;
+; |SHIFTTER|S[4]          ; |SHIFTTER|S[4]~corein   ; combout          ;
+; |SHIFTTER|S[5]          ; |SHIFTTER|S[5]~corein   ; combout          ;
+; |SHIFTTER|S[6]          ; |SHIFTTER|S[6]~corein   ; combout          ;
+; |SHIFTTER|S[7]          ; |SHIFTTER|S[7]~corein   ; combout          ;
+; |SHIFTTER|S[8]          ; |SHIFTTER|S[8]~corein   ; combout          ;
+; |SHIFTTER|S[9]          ; |SHIFTTER|S[9]~corein   ; combout          ;
+; |SHIFTTER|S[10]         ; |SHIFTTER|S[10]~corein  ; combout          ;
+; |SHIFTTER|S[11]         ; |SHIFTTER|S[11]~corein  ; combout          ;
+; |SHIFTTER|S[12]         ; |SHIFTTER|S[12]~corein  ; combout          ;
+; |SHIFTTER|S[13]         ; |SHIFTTER|S[13]~corein  ; combout          ;
+; |SHIFTTER|S[14]         ; |SHIFTTER|S[14]~corein  ; combout          ;
+; |SHIFTTER|S[15]         ; |SHIFTTER|S[15]~corein  ; combout          ;
+; |SHIFTTER|S[16]         ; |SHIFTTER|S[16]~corein  ; combout          ;
+; |SHIFTTER|S[17]         ; |SHIFTTER|S[17]~corein  ; combout          ;
+; |SHIFTTER|S[18]         ; |SHIFTTER|S[18]~corein  ; combout          ;
+; |SHIFTTER|S[19]         ; |SHIFTTER|S[19]~corein  ; combout          ;
+; |SHIFTTER|S[20]         ; |SHIFTTER|S[20]~corein  ; combout          ;
+; |SHIFTTER|S[21]         ; |SHIFTTER|S[21]~corein  ; combout          ;
+; |SHIFTTER|S[22]         ; |SHIFTTER|S[22]~corein  ; combout          ;
+; |SHIFTTER|S[23]         ; |SHIFTTER|S[23]~corein  ; combout          ;
+; |SHIFTTER|S[24]         ; |SHIFTTER|S[24]~corein  ; combout          ;
+; |SHIFTTER|S[25]         ; |SHIFTTER|S[25]~corein  ; combout          ;
+; |SHIFTTER|S[26]         ; |SHIFTTER|S[26]~corein  ; combout          ;
+; |SHIFTTER|S[27]         ; |SHIFTTER|S[27]~corein  ; combout          ;
+; |SHIFTTER|S[28]         ; |SHIFTTER|S[28]~corein  ; combout          ;
+; |SHIFTTER|S[29]         ; |SHIFTTER|S[29]~corein  ; combout          ;
+; |SHIFTTER|S[30]         ; |SHIFTTER|S[30]~corein  ; combout          ;
+; |SHIFTTER|S[31]         ; |SHIFTTER|S[31]~corein  ; combout          ;
++-------------------------+-------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------+
+; Missing 0-Value Coverage                                             ;
++-------------------------+-------------------------+------------------+
+; Node Name               ; Output Port Name        ; Output Port Type ;
++-------------------------+-------------------------+------------------+
+; |SHIFTTER|inst24[31]    ; |SHIFTTER|inst24[31]    ; combout          ;
+; |SHIFTTER|inst24[30]    ; |SHIFTTER|inst24[30]    ; combout          ;
+; |SHIFTTER|inst24[29]    ; |SHIFTTER|inst24[29]    ; combout          ;
+; |SHIFTTER|inst24[28]    ; |SHIFTTER|inst24[28]    ; combout          ;
+; |SHIFTTER|inst24[27]    ; |SHIFTTER|inst24[27]    ; combout          ;
+; |SHIFTTER|inst24[26]    ; |SHIFTTER|inst24[26]    ; combout          ;
+; |SHIFTTER|inst24[25]    ; |SHIFTTER|inst24[25]    ; combout          ;
+; |SHIFTTER|inst24[24]    ; |SHIFTTER|inst24[24]    ; combout          ;
+; |SHIFTTER|inst24[23]~0  ; |SHIFTTER|inst24[23]~0  ; combout          ;
+; |SHIFTTER|inst24[23]~1  ; |SHIFTTER|inst24[23]~1  ; combout          ;
+; |SHIFTTER|inst24[22]~2  ; |SHIFTTER|inst24[22]~2  ; combout          ;
+; |SHIFTTER|inst24[22]~3  ; |SHIFTTER|inst24[22]~3  ; combout          ;
+; |SHIFTTER|inst24[21]~4  ; |SHIFTTER|inst24[21]~4  ; combout          ;
+; |SHIFTTER|inst24[21]~5  ; |SHIFTTER|inst24[21]~5  ; combout          ;
+; |SHIFTTER|inst24[20]~6  ; |SHIFTTER|inst24[20]~6  ; combout          ;
+; |SHIFTTER|inst24[20]~7  ; |SHIFTTER|inst24[20]~7  ; combout          ;
+; |SHIFTTER|inst24[19]~8  ; |SHIFTTER|inst24[19]~8  ; combout          ;
+; |SHIFTTER|inst24[19]~9  ; |SHIFTTER|inst24[19]~9  ; combout          ;
+; |SHIFTTER|inst24[18]~10 ; |SHIFTTER|inst24[18]~10 ; combout          ;
+; |SHIFTTER|inst24[18]~11 ; |SHIFTTER|inst24[18]~11 ; combout          ;
+; |SHIFTTER|inst24[17]~12 ; |SHIFTTER|inst24[17]~12 ; combout          ;
+; |SHIFTTER|inst24[17]~13 ; |SHIFTTER|inst24[17]~13 ; combout          ;
+; |SHIFTTER|inst24[16]~14 ; |SHIFTTER|inst24[16]~14 ; combout          ;
+; |SHIFTTER|inst24[16]~15 ; |SHIFTTER|inst24[16]~15 ; combout          ;
+; |SHIFTTER|inst24[15]~16 ; |SHIFTTER|inst24[15]~16 ; combout          ;
+; |SHIFTTER|inst24[15]~17 ; |SHIFTTER|inst24[15]~17 ; combout          ;
+; |SHIFTTER|inst24[14]~18 ; |SHIFTTER|inst24[14]~18 ; combout          ;
+; |SHIFTTER|inst24[14]~19 ; |SHIFTTER|inst24[14]~19 ; combout          ;
+; |SHIFTTER|inst24[13]~20 ; |SHIFTTER|inst24[13]~20 ; combout          ;
+; |SHIFTTER|inst24[13]~21 ; |SHIFTTER|inst24[13]~21 ; combout          ;
+; |SHIFTTER|inst24[12]~22 ; |SHIFTTER|inst24[12]~22 ; combout          ;
+; |SHIFTTER|inst24[12]~23 ; |SHIFTTER|inst24[12]~23 ; combout          ;
+; |SHIFTTER|inst24[11]~24 ; |SHIFTTER|inst24[11]~24 ; combout          ;
+; |SHIFTTER|inst24[11]~25 ; |SHIFTTER|inst24[11]~25 ; combout          ;
+; |SHIFTTER|inst24[10]~26 ; |SHIFTTER|inst24[10]~26 ; combout          ;
+; |SHIFTTER|inst24[10]~27 ; |SHIFTTER|inst24[10]~27 ; combout          ;
+; |SHIFTTER|inst24[9]~28  ; |SHIFTTER|inst24[9]~28  ; combout          ;
+; |SHIFTTER|inst24[9]~29  ; |SHIFTTER|inst24[9]~29  ; combout          ;
+; |SHIFTTER|inst24[8]~30  ; |SHIFTTER|inst24[8]~30  ; combout          ;
+; |SHIFTTER|inst24[8]~31  ; |SHIFTTER|inst24[8]~31  ; combout          ;
+; |SHIFTTER|inst24[7]~32  ; |SHIFTTER|inst24[7]~32  ; combout          ;
+; |SHIFTTER|inst24[7]~33  ; |SHIFTTER|inst24[7]~33  ; combout          ;
+; |SHIFTTER|inst24[6]~34  ; |SHIFTTER|inst24[6]~34  ; combout          ;
+; |SHIFTTER|inst24[6]~35  ; |SHIFTTER|inst24[6]~35  ; combout          ;
+; |SHIFTTER|inst24[5]~36  ; |SHIFTTER|inst24[5]~36  ; combout          ;
+; |SHIFTTER|inst24[5]~37  ; |SHIFTTER|inst24[5]~37  ; combout          ;
+; |SHIFTTER|inst24[4]~38  ; |SHIFTTER|inst24[4]~38  ; combout          ;
+; |SHIFTTER|inst24[4]~39  ; |SHIFTTER|inst24[4]~39  ; combout          ;
+; |SHIFTTER|inst24[3]~40  ; |SHIFTTER|inst24[3]~40  ; combout          ;
+; |SHIFTTER|inst24[3]~41  ; |SHIFTTER|inst24[3]~41  ; combout          ;
+; |SHIFTTER|inst24[2]~42  ; |SHIFTTER|inst24[2]~42  ; combout          ;
+; |SHIFTTER|inst24[2]~43  ; |SHIFTTER|inst24[2]~43  ; combout          ;
+; |SHIFTTER|inst24[1]~44  ; |SHIFTTER|inst24[1]~44  ; combout          ;
+; |SHIFTTER|inst24[1]~45  ; |SHIFTTER|inst24[1]~45  ; combout          ;
+; |SHIFTTER|inst24[0]~46  ; |SHIFTTER|inst24[0]~46  ; combout          ;
+; |SHIFTTER|Cout[31]      ; |SHIFTTER|Cout[31]      ; padio            ;
+; |SHIFTTER|Cout[30]      ; |SHIFTTER|Cout[30]      ; padio            ;
+; |SHIFTTER|Cout[29]      ; |SHIFTTER|Cout[29]      ; padio            ;
+; |SHIFTTER|Cout[28]      ; |SHIFTTER|Cout[28]      ; padio            ;
+; |SHIFTTER|Cout[27]      ; |SHIFTTER|Cout[27]      ; padio            ;
+; |SHIFTTER|Cout[26]      ; |SHIFTTER|Cout[26]      ; padio            ;
+; |SHIFTTER|Cout[25]      ; |SHIFTTER|Cout[25]      ; padio            ;
+; |SHIFTTER|Cout[24]      ; |SHIFTTER|Cout[24]      ; padio            ;
+; |SHIFTTER|Cout[23]      ; |SHIFTTER|Cout[23]      ; padio            ;
+; |SHIFTTER|Cout[22]      ; |SHIFTTER|Cout[22]      ; padio            ;
+; |SHIFTTER|Cout[21]      ; |SHIFTTER|Cout[21]      ; padio            ;
+; |SHIFTTER|Cout[20]      ; |SHIFTTER|Cout[20]      ; padio            ;
+; |SHIFTTER|Cout[19]      ; |SHIFTTER|Cout[19]      ; padio            ;
+; |SHIFTTER|Cout[18]      ; |SHIFTTER|Cout[18]      ; padio            ;
+; |SHIFTTER|Cout[17]      ; |SHIFTTER|Cout[17]      ; padio            ;
+; |SHIFTTER|Cout[16]      ; |SHIFTTER|Cout[16]      ; padio            ;
+; |SHIFTTER|Cout[15]      ; |SHIFTTER|Cout[15]      ; padio            ;
+; |SHIFTTER|Cout[14]      ; |SHIFTTER|Cout[14]      ; padio            ;
+; |SHIFTTER|Cout[13]      ; |SHIFTTER|Cout[13]      ; padio            ;
+; |SHIFTTER|Cout[12]      ; |SHIFTTER|Cout[12]      ; padio            ;
+; |SHIFTTER|Cout[11]      ; |SHIFTTER|Cout[11]      ; padio            ;
+; |SHIFTTER|Cout[10]      ; |SHIFTTER|Cout[10]      ; padio            ;
+; |SHIFTTER|Cout[9]       ; |SHIFTTER|Cout[9]       ; padio            ;
+; |SHIFTTER|Cout[8]       ; |SHIFTTER|Cout[8]       ; padio            ;
+; |SHIFTTER|Cout[7]       ; |SHIFTTER|Cout[7]       ; padio            ;
+; |SHIFTTER|Cout[6]       ; |SHIFTTER|Cout[6]       ; padio            ;
+; |SHIFTTER|Cout[5]       ; |SHIFTTER|Cout[5]       ; padio            ;
+; |SHIFTTER|Cout[4]       ; |SHIFTTER|Cout[4]       ; padio            ;
+; |SHIFTTER|Cout[3]       ; |SHIFTTER|Cout[3]       ; padio            ;
+; |SHIFTTER|Cout[2]       ; |SHIFTTER|Cout[2]       ; padio            ;
+; |SHIFTTER|Cout[1]       ; |SHIFTTER|Cout[1]       ; padio            ;
+; |SHIFTTER|Cout[0]       ; |SHIFTTER|Cout[0]       ; padio            ;
+; |SHIFTTER|S[0]          ; |SHIFTTER|S[0]~corein   ; combout          ;
+; |SHIFTTER|SRA1          ; |SHIFTTER|SRA1~corein   ; combout          ;
+; |SHIFTTER|S[1]          ; |SHIFTTER|S[1]~corein   ; combout          ;
+; |SHIFTTER|SLL8          ; |SHIFTTER|SLL8~corein   ; combout          ;
+; |SHIFTTER|S[2]          ; |SHIFTTER|S[2]~corein   ; combout          ;
+; |SHIFTTER|S[3]          ; |SHIFTTER|S[3]~corein   ; combout          ;
+; |SHIFTTER|S[4]          ; |SHIFTTER|S[4]~corein   ; combout          ;
+; |SHIFTTER|S[5]          ; |SHIFTTER|S[5]~corein   ; combout          ;
+; |SHIFTTER|S[6]          ; |SHIFTTER|S[6]~corein   ; combout          ;
+; |SHIFTTER|S[7]          ; |SHIFTTER|S[7]~corein   ; combout          ;
+; |SHIFTTER|S[8]          ; |SHIFTTER|S[8]~corein   ; combout          ;
+; |SHIFTTER|S[9]          ; |SHIFTTER|S[9]~corein   ; combout          ;
+; |SHIFTTER|S[10]         ; |SHIFTTER|S[10]~corein  ; combout          ;
+; |SHIFTTER|S[11]         ; |SHIFTTER|S[11]~corein  ; combout          ;
+; |SHIFTTER|S[12]         ; |SHIFTTER|S[12]~corein  ; combout          ;
+; |SHIFTTER|S[13]         ; |SHIFTTER|S[13]~corein  ; combout          ;
+; |SHIFTTER|S[14]         ; |SHIFTTER|S[14]~corein  ; combout          ;
+; |SHIFTTER|S[15]         ; |SHIFTTER|S[15]~corein  ; combout          ;
+; |SHIFTTER|S[16]         ; |SHIFTTER|S[16]~corein  ; combout          ;
+; |SHIFTTER|S[17]         ; |SHIFTTER|S[17]~corein  ; combout          ;
+; |SHIFTTER|S[18]         ; |SHIFTTER|S[18]~corein  ; combout          ;
+; |SHIFTTER|S[19]         ; |SHIFTTER|S[19]~corein  ; combout          ;
+; |SHIFTTER|S[20]         ; |SHIFTTER|S[20]~corein  ; combout          ;
+; |SHIFTTER|S[21]         ; |SHIFTTER|S[21]~corein  ; combout          ;
+; |SHIFTTER|S[22]         ; |SHIFTTER|S[22]~corein  ; combout          ;
+; |SHIFTTER|S[23]         ; |SHIFTTER|S[23]~corein  ; combout          ;
+; |SHIFTTER|S[24]         ; |SHIFTTER|S[24]~corein  ; combout          ;
+; |SHIFTTER|S[25]         ; |SHIFTTER|S[25]~corein  ; combout          ;
+; |SHIFTTER|S[26]         ; |SHIFTTER|S[26]~corein  ; combout          ;
+; |SHIFTTER|S[27]         ; |SHIFTTER|S[27]~corein  ; combout          ;
+; |SHIFTTER|S[28]         ; |SHIFTTER|S[28]~corein  ; combout          ;
+; |SHIFTTER|S[29]         ; |SHIFTTER|S[29]~corein  ; combout          ;
+; |SHIFTTER|S[30]         ; |SHIFTTER|S[30]~corein  ; combout          ;
+; |SHIFTTER|S[31]         ; |SHIFTTER|S[31]~corein  ; combout          ;
++-------------------------+-------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Jul 12 00:13:57 2024
+Info: Command: quartus_sim --simulation_results_format=VWF MC1 -c MC1
+Info (324025): Using vector source file "/home/radsfer/shared/Projeto MC1/SHIFTTER.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is       0.00 %
+Info (328052): Number of transitions in simulation is 0
+Info (324045): Vector file MC1.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 32-bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 284 megabytes
+    Info: Processing ended: Fri Jul 12 00:13:58 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
