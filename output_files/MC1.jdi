@@ -1,8 +1,8 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="ec2fbd2031b8299a29e9"/>
+    <hash md5_digest_80b="3bda2da6d3337f668903"/>
   </project>
   <file_info>
-    <file device="EP2C5F256C6" path="MC1.sof" usercode="0xFFFFFFFF"/>
+    <file device="EP2C15AF484C6" path="MC1.sof" usercode="0xFFFFFFFF"/>
   </file_info>
 </sld_project_info>

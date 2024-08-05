@@ -37,9 +37,25 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -104 960 64 976)
+	(rect -80 976 88 992)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MIR[35..0]" (rect 5 0 55 11)(font "Arial" ))
+	(text "SRA1" (rect 5 0 35 11)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -80 992 88 1008)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "SLL8" (rect 5 0 31 11)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -1088,11 +1104,6 @@ applicable agreement for further details.
 	(pt 768 1352)
 )
 (connector
-	(pt 64 968)
-	(pt 80 968)
-	(bus)
-)
-(connector
 	(text "OUTPUT[31]" (rect 720 968 783 979)(font "Arial" ))
 	(pt 728 984)
 	(pt 784 984)
@@ -1116,16 +1127,6 @@ applicable agreement for further details.
 	(pt 424 984)
 )
 (connector
-	(text "MIR[22]" (rect 192 968 230 979)(font "Arial" ))
-	(pt 184 984)
-	(pt 240 984)
-)
-(connector
-	(text "MIR[23]" (rect 192 984 230 995)(font "Arial" ))
-	(pt 184 1000)
-	(pt 240 1000)
-)
-(connector
 	(pt 336 984)
 	(pt 424 984)
 )
@@ -1140,4 +1141,12 @@ applicable agreement for further details.
 (connector
 	(pt 336 1032)
 	(pt 432 1032)
+)
+(connector
+	(pt 88 984)
+	(pt 240 984)
+)
+(connector
+	(pt 88 1000)
+	(pt 240 1000)
 )
